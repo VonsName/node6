@@ -1,0 +1,11 @@
+{
+  "name": "node6",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express-static": "^1.2.5"
+  },
+  "devDependencies": {
+    "express": "latest"
+  }
+}
