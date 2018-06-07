@@ -5,10 +5,35 @@
     <title>Title</title>
 </head>
 <body>
-   <form action="http://localhost:8080/login" method="get">
+   <form action="http://localhost:8080/lo" method="post">
        用户名：<input type="text" name="username">
        mima :  <input type="password" name="password">
        <input type="submit" value="提交">
    </form>
+
+   <!-- 测试闭包-->
+    <script>
+        /*sayHello('lisi');
+        function sayHello(name) {
+            let text='HELLO'+name;
+            var say=function () {
+                console.log(text);
+            };
+            return say;
+        }*/
+        // let say2=sayHello('lisi');
+        // say2();
+        // (sayHello('lisi'))()
+        var s=say();
+        s();
+        function say() {
+            let num=42;
+            var test=function () {
+                console.log(num);
+            };
+            num++;
+            return test;
+        }
+    </script>
 </body>
 </html>
